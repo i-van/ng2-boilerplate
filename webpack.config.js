@@ -14,7 +14,7 @@ module.exports = {
 
   output: {
     path: './dist',
-    filename: 'main-[hash].js'
+    filename: '[name]-[hash].js'
   },
 
   module: {

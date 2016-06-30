@@ -22,7 +22,7 @@ module.exports = {
       { test: /\.html$/, loader: 'html' },
       { test: /\.json$/, loader: 'json' },
       { test: /\.js$/, loader: 'babel', exclude: /node_modules/, query: { presets: ['es2015', 'angular2'] } },
-      { test: /\.less/, loader: ExtractTextPlugin.extract('style', 'css!less?sourceMap') },
+      { test: /\.less$/, loader: ExtractTextPlugin.extract('style', 'css!less?sourceMap') },
       { test: /\.css$/, loader: ExtractTextPlugin.extract('style', 'css') },
       { test: /\.woff2?(.*)?$/, loader: 'file?name=fonts/[name].[ext]' },
       { test: /\.(ttf|eot|svg)(.*)?$/, loader: 'file?name=fonts/[name].[ext]' },

@@ -1,0 +1,19 @@
+<div>block details</div>
+
+<table>
+  <thead>
+  <tr>
+    <th>#</th>
+    <th>name</th>
+    <th>created at</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let row of rows">
+    <td>{{ row.id }}</td>
+    <td>{{ row.name }}</td>
+    <td>{{ row.created | formatDate:'full' }}</td>
+  </tr>
+  </tbody>
+</table>

@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
+import AppHeaderComponent from './header/component';
 import template from './app.html';
-// import style from './style.less';
-// import { HeaderComponent } from '../header/header.component';
-// import { FooterComponent } from '../footer/footer.component';
+import './style.less';
 
 @Component({
   selector: 'app',
   template,
-  // style,
-  directives: [ROUTER_DIRECTIVES/*, HeaderComponent, FooterComponent*/]
+  directives: [ROUTER_DIRECTIVES, AppHeaderComponent]
 })
 
 export default class AppComponent {}

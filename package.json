@@ -23,6 +23,9 @@
     "html-loader": "0.4.3",
     "html-webpack-plugin": "2.15.0",
     "json-loader": "0.5.4",
+    "less": "2.7.1",
+    "less-loader": "2.2.3",
+    "style-loader": "0.13.1",
     "webpack": "1.13.1",
     "webpack-dev-server": "1.14.1"
   },

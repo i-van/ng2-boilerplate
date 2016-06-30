@@ -1,21 +1,4 @@
-<header>
-  <h2>I am the header</h2>
-  <ul>
-    <li>
-      <a [routerLink]="['home']">Home</a>
-    </li>
-    <li>
-      <a [routerLink]="['block', 5]">Block 5</a>
-    </li>
-    <li>
-      <a [routerLink]="['block', 5, 'help']">Block 5 help</a>
-    </li>
-    <li>
-      <a [routerLink]="['block', 5, 'details']">Block 5 details</a>
-    </li>
-  </ul>
-</header>
-
+<app-header></app-header>
 <section>
   <h1>I am the content</h1>
   <router-outlet></router-outlet>

@@ -1,17 +1,23 @@
-<header>
-  <h2>I am the header</h2>
-  <ul>
-    <li>
-      <a [routerLink]="['home']">Home</a>
-    </li>
-    <li>
-      <a [routerLink]="['block', 5]">Block 5</a>
-    </li>
-    <li>
-      <a [routerLink]="['block', 5, 'help']">Block 5 help</a>
-    </li>
-    <li>
-      <a [routerLink]="['block', 5, 'details']">Block 5 details</a>
-    </li>
-  </ul>
-</header>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">NG2 Boilerplate</a>
+    </div>
+
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a [routerLink]="['home']">Home</a></li>
+        <li><a [routerLink]="['users']">Users</a></li>
+        <li><a [routerLink]="['block', 5]">Block 5</a></li>
+        <li><a [routerLink]="['block', 5, 'help']">Block 5 help</a></li>
+        <li><a [routerLink]="['block', 5, 'details']">Block 5 details</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

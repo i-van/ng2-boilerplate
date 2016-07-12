@@ -1,6 +1,9 @@
-import 'reflect-metadata/Reflect';
+import 'bootstrap/dist/css/bootstrap.css';
+import '../assets/styles/main.less';
+
 import 'zone.js/dist/zone';
 import 'zone.js/dist/long-stack-trace-zone';
+import 'reflect-metadata/Reflect';
 
 import { bootstrap } from '@angular/platform-browser-dynamic';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';

@@ -3,7 +3,7 @@ import BlockComponent from './components/block/component';
 import BlockIndexComponent from './components/block/index/component';
 import BlockDetailsComponent from './components/block/details/component';
 import BlockHelpComponent from './components/block/help/component';
-import HomeComponent from './components/home/component';
+import HomeComponent from './components/home/home.component';
 
 import UsersComponent from './components/users/component';
 import UsersIndexComponent from './components/users/index/component';

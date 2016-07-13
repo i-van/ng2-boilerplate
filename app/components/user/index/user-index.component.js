@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import template from './users-index.html';
-import UserService from '../../../services/user';
+import template from './user-index.component.html';
+import UserService from '../user.service';
 
 @Component({
-  selector: 'users-index',
+  selector: 'user-index',
   providers: [UserService],
   template
 })
-export default class UsersIndexComponent {
+export default class UserIndexComponent {
   constructor(userService: UserService) {
     this.userService = userService;
 

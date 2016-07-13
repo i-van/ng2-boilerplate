@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
-import template from './users.html';
+import template from './user.component.html';
 
 @Component({
-  selector: 'users',
+  selector: 'user',
   directives: [ROUTER_DIRECTIVES],
   template
 })
-export default class UsersComponent {}
+export default class UserComponent {}

@@ -12,11 +12,11 @@
 
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a [routerLink]="['home']">Home</a></li>
-        <li><a [routerLink]="['users']">Users</a></li>
-        <li><a [routerLink]="['block', 5]">Block 5</a></li>
-        <li><a [routerLink]="['block', 5, 'help']">Block 5 help</a></li>
-        <li><a [routerLink]="['block', 5, 'details']">Block 5 details</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['home']">Home</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['users']">Users</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['block', 5]">Block 5</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['block', 5, 'help']">Block 5 help</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['block', 5, 'details']">Block 5 details</a></li>
       </ul>
     </div>
   </div>

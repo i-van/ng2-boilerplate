@@ -5,8 +5,8 @@ import BlockDetailsComponent from './components/block/details/component';
 import BlockHelpComponent from './components/block/help/component';
 import HomeComponent from './components/home/home.component';
 
-import UsersComponent from './components/users/component';
-import UsersIndexComponent from './components/users/index/component';
+import UsersComponent from './components/user/user.component';
+import UsersIndexComponent from './components/user/index/user-index.component';
 
 export let routes = [
   { path: '', component: HomeComponent },

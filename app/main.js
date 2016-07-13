@@ -12,7 +12,7 @@ import { APP_ROUTER_PROVIDERS } from './routes';
 import AppComponent from './components/app/app.component';
 
 bootstrap(AppComponent, [
-  { provide: LocationStrategy, useClass: HashLocationStrategy },
   APP_ROUTER_PROVIDERS,
+  { provide: LocationStrategy, useClass: HashLocationStrategy },
   HTTP_PROVIDERS
 ]);

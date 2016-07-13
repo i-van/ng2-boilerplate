@@ -1,14 +1,16 @@
 import { provideRouter } from '@angular/router';
 import HomeComponent from './components/home/home.component';
 
-import UsersComponent from './components/user/user.component';
-import UsersIndexComponent from './components/user/index/user-index.component';
+import UserComponent from './components/user/user.component';
+import UserIndexComponent from './components/user/index/user-index.component';
+import UserEditComponent from './components/user/edit/user-edit.component';
 
 export let routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'users', component: UsersComponent, children: [
-    { path: '', component: UsersIndexComponent }
+  { path: 'users', component: UserComponent, children: [
+    { path: '', component: UserIndexComponent },
+    { path: ':id/edit', component: UserEditComponent }
   ] }
 ];
 

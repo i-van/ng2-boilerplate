@@ -1,1 +1,17 @@
-<div>users index</div>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>#</th>
+    <th>name</th>
+    <th>created at</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let user of users">
+    <th>{{ user.id }}</th>
+    <td>{{ user.name }}</td>
+    <td>{{ user.created | date: "dd-MM-y" }}</td>
+  </tr>
+  </tbody>
+</table>

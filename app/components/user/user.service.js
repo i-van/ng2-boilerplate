@@ -18,11 +18,11 @@ function wrapper(data) {
 
 @Injectable()
 export default class UserService {
-  fetchAll() {
+  fetch() {
     return wrapper(data);
   }
 
-  fetch(id: Number) {
+  fetchOne(id: Number) {
     return wrapper(data.find(user => user.id === id));
   }
 }

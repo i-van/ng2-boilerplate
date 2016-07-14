@@ -19,7 +19,7 @@ export default class UserIndexComponent {
   }
 
   ngOnInit() {
-    this.userService.fetchAll()
+    this.userService.fetch()
       .subscribe(users => this.users = users);
   }
 }

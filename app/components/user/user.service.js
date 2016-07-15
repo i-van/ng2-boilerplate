@@ -27,4 +27,15 @@ export default class UserService {
   fetchOne(id: Number) {
     return wrapper('/users/' + id, data.find(user => user.id === id));
   }
+
+  update(userData) {
+    let user = data.find(user => user.id === userData.id);
+
+    if (!user) {
+      throw new Error('Cannot find User');
+    }
+
+    Object.assign(user, userData);
+    return wrapper('/users/' + userData.id, user);
+  }
 }

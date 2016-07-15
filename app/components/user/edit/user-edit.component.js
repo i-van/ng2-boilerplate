@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import template from './user-edit.component.html';
+import FormInputComponent from '../../../common/form-input/form-input.component';
 import UserService from '../user.service';
 
 @Component({
   selector: 'user-edit',
   providers: [UserService],
+  directives: [FormInputComponent],
   template
 })
 export default class UserComponent {

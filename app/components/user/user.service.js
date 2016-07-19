@@ -21,7 +21,7 @@ function wrapper(url, data) {
 @Injectable()
 export default class UserService {
   fetch() {
-    return wrapper('/users', data);
+    return wrapper('/users', data.slice(0));
   }
 
   fetchOne(id: Number) {
@@ -37,5 +37,15 @@ export default class UserService {
 
     Object.assign(user, userData);
     return wrapper('/users/' + userData.id, user);
+  }
+
+  remove(userId) {
+    let i = data.findIndex(user => user.id === userId);
+
+    if (i !== -1) {
+      data.splice(i, 1);
+    }
+
+    return wrapper('/users/' + userId, true);
   }
 }
